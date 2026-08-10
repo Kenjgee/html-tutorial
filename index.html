@@ -5,52 +5,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
   <section>
     <nav>
-    <img src="./assets/FES.svg"  alt="FES Logo">
-    <ul>
+      <img src="./assets/FES.svg" class="logo" alt="Frontend Simplified brand logo with FES letters in a clean bold layout conveying professional learning">
+      <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#discord">Discord</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     </nav>
-    <header>
-      <div>
-        <h1>Best place to learn frontend</h1>
-        <p>Go from being an absolute beginner to pro with a simplified process.</p>
-        <button>Start Now</button>
+    <header> 
+      <div class="row">
+         
+        <div>
+          <h1>Best place to learn frontend </h1>
+          <p class="subheader">Go from being an absolute beginner to pro with a simplified process.</p>
+          <button>Start Now</button>
+        </div>
+        <figure>
+          <img src="./assets/laptop.png" alt="Laptop computer displaying a web interface with code and design elements in a frontend learning environment">
+        </figure>
       </div>
-      <figure>
-        <img src="./assets/laptop.png" alt="Home Page Image">
-    </header>
+          </header>
   </section>
   
-    <main>
-      <section id="about">
-        <h2>About</h2>
-        <div>
-          <p> This is the About me section. I didnt want to use the Lorem ipsom text so I will use this for the example.
+  <main>
+    <section id="about">
+      <h2>About</h2>
+    <div class="row">
+      <div class="section__description">    
+        <div class="section__description--wrapper">     
+          
+          <p class="section__description--para"> This is the About me section. I didnt want to use the Lorem ipsom text so I will use this for the example.
           </p>
-          <p> This is the About me section. I didnt want to use the Lorem ipsom text so I will use this for the example.        </p>
+          <p class="section__description--para"> This is the About me section. I didnt want to use the Lorem ipsom text so I will use this for the example.        </p>
         </div>
-        <figure>
-          <img src="./assets/about.jpg" alt="About Image">
+      </div>
+        <figure class="about__img--wrapper">
+          <img src="./assets/about.jpg" alt="Person working on a laptop in a bright workspace on frontend development, focused and professional">
         </figure>
-      </section>
+    </div>
 
-      <section id="discord">
-        <h2>Discord</h2>
-        <figure>
-          <img src="./assets/discord.png" alt="Discord Image">
-        </figure>
-        <div>
-          <p> Join our Discord server to connect with other learners and get help with your frontend development journey.
+    </section>
+
+    <section id="discord">
+    <h2>Discord</h2>
+    <div class="row">
+      <div class="section__description">
+         <figure class="about__img--wrapper">
+          <img src="./assets/discord.png" alt="Discord interface showing chat channels and community connections for learners in a friendly support network">
+         </figure>
+         <div class="section__description--wrapper">
+          <p class="section__description--para"> Join our Discord server to connect with other learners and get help with your frontend development journey.
           </p>
-          <p> Another paragraph about discord </p>
-        </div>
+          <p class="section__description--para"> Another paragraph about discord </p>
+         </div> 
+      </div>
+    </div>     
       </section>
 
       <section id="contact">
@@ -60,19 +75,19 @@
             <input type="email" name="email" placeholder="Your email@email.com">
 
             <label>message:</label>
-            <textarea name="message" placeholder="Enter your message"></textarea>
-            <button type="submit">Submit</button>
+            <textarea name="message" placeholder="Cool website, let's get connected!"></textarea>
+            <button>Contact Us!</button>
           </form>
       </section>      
     </main>   
 
     <footer>
-      <img src="./assets/FES.svg" alt="FES Logo">
-      <div>
-        <a href="#about">About</a>
-        <a href="#discord">Discord</a>
-        <a href="#contact">Contact</a>
-        <a href="">Courses</a>
+      <img class="footer__logo" src="./assets/FES.svg" alt="Frontend Simplified brand logo displaying FES letters">
+      <div class="footer__links">
+        <a class="footer__links" href="#about">About</a>
+        <a class="footer__links" href="#discord">Discord</a>
+        <a class="footer__links" href="#contact">Contact</a>
+        <a class="footer__links" href="">Courses</a>
       </div>
       <p>© 2026 Frontend Simplified. All rights reserved.        
       </p>
